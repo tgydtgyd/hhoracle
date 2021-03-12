@@ -1,3 +1,4 @@
+区块链学习 2021/03/12 16:14:40
 pragma solidity ^0.4.11;
 
 
@@ -58,10 +59,10 @@ contract StandardToken is HHOERC20, HHOBasicToken {
   }
   
     /*
-   * approve should be called when allowed[_spender] == 0. To increment
+   * approve should be called when allowed[_spender] == 0. To increment 
    * allowed value is better to use this function to avoid 2 calls (and wait until 
-   * the first transaction is mined)
-   * From MonolithDAO Token.sol
+   * the first transaction is mined) 
+   * From MonolithDAO Token.sol 
    */
   function increaseApproval (address _spender, uint _addedValue) 
     returns (bool success) {
