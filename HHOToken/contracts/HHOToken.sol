@@ -1,8 +1,9 @@
+区块链学习 2021/03/12 16:11:30
 pragma solidity ^0.4.11;
 
 
 import "./ERC677Token.sol";
-import { StandardToken as HHOStandardToken } from "./vendor/StandardToken.sol";
+import { StandardToken as HHOStandardToken } from ".endor/StandardToken.sol";
 
 
 contract HHOToken is HHOStandardToken, ERC677Token {
@@ -33,9 +34,9 @@ contract HHOToken is HHOStandardToken, ERC677Token {
   }
 
   /**
-  * @dev transfer token to a specified address.
-  * @param _to The address to transfer to.
-  * @param _value The amount to be transferred.
+  * @dev transfer token to a specified address. 
+  * @param _to The address to transfer to. 
+  * @param _value The amount to be transferred. 
   */
   function transfer(address _to, uint _value)
     public
